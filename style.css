@@ -17,6 +17,25 @@
   --cursor-size: 32px;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background: var(--bg-main);
+  z-index: 0;
+}
+
 /* Navbar: Centered Brand, Right Links */
 .navbar {
   position: fixed;
@@ -227,7 +246,7 @@
   letter-spacing: 0.02em;
 }
 
-/* ... (rest of unchanged section, skills, projects, contact, custom-cursor, animate-in, bg-shape, etc, from previous code) ... */
+/* ... (section skills, projects, contact, custom-cursor, animate-in, bg-shape, etc, sama seperti versi sebelumnya)... */
 
 .bg-shape {
   position: fixed;
@@ -251,8 +270,6 @@
   top: 70vh; left: 50vw;
   background: radial-gradient(circle, #2e1e40 0%, transparent 70%);
 }
-
-/* ... (keep rest of previous CSS unchanged) ... */
 
 /* Responsive */
 @media (max-width: 900px) {
