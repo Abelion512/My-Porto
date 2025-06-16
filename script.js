@@ -84,7 +84,7 @@ function cursorToggle(e, state) {
   if (state) cursor.classList.add('cursor-hover');
   else cursor.classList.remove('cursor-hover');
 }
-['a', 'button', '.nav-brand', '.skill-card', '.project-demo-btn', '.nav-burger', '.mobile-link', '.scroll-down'].forEach(sel => {
+['a', 'button', '.nav-brand-center', '.skill-card', '.project-demo-btn', '.nav-burger', '.mobile-link', '.scroll-down'].forEach(sel => {
   document.querySelectorAll(sel).forEach(el => {
     el.addEventListener('mouseenter', () => cursorToggle(null, true));
     el.addEventListener('mouseleave', () => cursorToggle(null, false));
