@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ifal.me — Abelion Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Inter font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand" id="nav-home" title="Home">
+      <span class="nav-dot">◉</span>
+      <span class="nav-brand-text">ifal.me</span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-burger" id="nav-burger" aria-label="Open Navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <!-- Mobile Slide Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Background Shapes -->
+  <div class="bg-shape bg-shape1"></div>
+  <div class="bg-shape bg-shape2"></div>
+  <div class="bg-shape bg-shape3"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title animate-in">I'm Abelion<br>
+          <span class="gradient-text">Future Designer,<br>Builder, & Visionary</span>
+        </h1>
+        <div class="scroll-down" id="scroll-down">
+          <span>scroll</span>
+          <svg width="24" height="24"><polyline points="6,8 12,16 18,8" fill="none" stroke="#7df" stroke-width="2"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container animate-in">
+        <h2 class="section-title">About</h2>
+        <p class="about-text">
+          Hi, I'm Abelion — a visionary learner obsessed with the future.<br>
+          My passion lies at the intersection of <span class="accent">AI</span>, <span class="accent">UI/UX</span>, and <span class="accent">modern technology</span>. I design, build, and dream to make tomorrow more intuitive and inspiring.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container animate-in">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card"><span>HTML</span></div>
+          <div class="skill-card"><span>CSS</span></div>
+          <div class="skill-card"><span>JS</span></div>
+          <div class="skill-card"><span>Canva</span></div>
+          <div class="skill-card"><span>Figma</span></div>
+          <div class="skill-card"><span>AI Tools</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container animate-in">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-name">VisionUI Kit</span>
+              <span class="project-tools">Figma, JS, AI</span>
+            </div>
+            <p class="project-desc">
+              Futuristic UI component set for rapid prototyping. Neon accents, glassmorphism, responsive layouts.
+            </p>
+            <a href="#" class="project-demo-btn" tabindex="0">Demo</a>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-name">Aether Blog</span>
+              <span class="project-tools">HTML, CSS, GSAP</span>
+            </div>
+            <p class="project-desc">
+              Minimalist, animated blog template with smooth scroll and dynamic theming.
+            </p>
+            <a href="#" class="project-demo-btn" tabindex="0">Demo</a>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-name">PromptFlow</span>
+              <span class="project-tools">AI, JS, Canva</span>
+            </div>
+            <p class="project-desc">
+              Interactive tool for prompt engineering and AI workflow visualization. Designed for clarity and speed.
+            </p>
+            <a href="#" class="project-demo-btn" tabindex="0">Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container animate-in">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form" autocomplete="off">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Email">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="form-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
