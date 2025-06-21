@@ -36,6 +36,55 @@ body {
   z-index: 0;
 }
 
+#door-entrance {
+  position: fixed;
+  z-index: 5000;
+  inset: 0;
+  background: #0d0d16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s cubic-bezier(.7,.25,.2,1);
+  will-change: opacity;
+}
+.door-frame {
+  width: 180px;
+  height: 320px;
+  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.door-panel {
+  width: 90px;
+  height: 320px;
+  background: linear-gradient(120deg, #181830 80%, #232c48 100%);
+  border-radius: 1.4em;
+  box-shadow: 0 0 32px 0 #202030;
+  position: relative;
+  transition: transform 1.2s cubic-bezier(.65,.02,.1,1);
+}
+.door-panel.left {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+  margin-right: 1px;
+  z-index: 2;
+}
+.door-panel.right {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  margin-left: 1px;
+  z-index: 2;
+}
+body.entrance-done #door-entrance {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .gradient-text {
   background: linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-blue) 100%);
   -webkit-background-clip: text;
